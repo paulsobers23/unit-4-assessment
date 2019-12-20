@@ -53,3 +53,4 @@ Answer each of the questions below clearly and concisely. Include code snippets 
 **6. What is the difference between an object's prototype and the prototype property of a function? What is the relationship between the two?**
 
 
+**7. What is polymorphism? Illustrate using code.**
