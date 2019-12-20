@@ -5,4 +5,9 @@ module.exports = {
   // SavingsAccount
   // Phone
   // AppleiPhone
+  // Person
+  // Student
+  // GraduateStudent
+  // Professor
+  // Doctor
 };

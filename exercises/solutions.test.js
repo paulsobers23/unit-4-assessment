@@ -49,10 +49,27 @@ test('Question 4', () => {
   const reubenPhone = new solutions.AppleiPhone('2234432211', 'iPhone 14');
   const mayasPhone = new solutions.AppleiPhone('3349987745', 'iPhone 6');
   const devontesPhone = new solutions.Phone('9932103000');
-  expect(reubensPhone instanceof Phone).toBe(true);  
-  expect(reubensPhone instanceof AppleiPhone).toBe(true);  
+  expect(reubensPhone instanceof solutions.Phone).toBe(true);  
+  expect(reubensPhone instanceof solutions.AppleiPhone).toBe(true);  
   expect(reubensPhone.sendiMessage(mayasPhone, 'Hey friend!')).toBe('Message sent.');
   expect(mayasPhone.sendiMessage(reubensPhone, 'Hey!')).toBe('Message sent.');
   expect(reubensPhone.sendiMessage(devontesPhone, 'DYFR!')).toBe('Message could not be sent.');
   expect(mayasPhone.sendiMessage(devontesPhone, '☀️')).toBe('Message could not be sent.');
+});
+
+// Question
+test('Question 5', () => {
+  const person = new solutions.Person();
+  const student = new solutions.Student();
+  const gradStudent = new solutions.Student();
+  const doctor = new solutions.Doctor();
+  const professor = new solutions.Professor();
+  expect(student instanceof solutions.Person).toBe(true);
+  expect(graduateStudent instanceof solutions.Person).toBe(true);
+  expect(graduateStudent instanceof solutions.Person).toBe(true);
+  expect(professor instanceof solutions.Person).toBe(true);
+  expect(professor instanceof solutions.Doctor).toBe(false);
+  expect(doctor instanceof solutions.Person).toBe(true);
+  expect("invoice" in doctor).toBe(true);
+  expect("payTax" in professor).toBe(true);
 });
