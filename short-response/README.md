@@ -7,6 +7,7 @@ Answer each of the questions below clearly and concisely. Include code snippets 
 **1. What is `this`?**
 
 
+
 **2. What will the following code produce? Why?** 
 
   ```javascript
@@ -27,7 +28,9 @@ Answer each of the questions below clearly and concisely. Include code snippets 
   console.log(c.add());
   ```
 
+
 **3. What is a closure? How does it allow us to create private data?**
+
 
 **4. What will the following code log to the console? Why?**
 
@@ -42,7 +45,9 @@ Answer each of the questions below clearly and concisely. Include code snippets 
   console.log( createGreeting("Buona sera")("Reuben") )
   ```
 
+
 **5. What is encapsulation? How do constructors and prototypes in JavaScript help us write encapsulated programs?**
+
 
 
 **6. What is the difference between an object's prototype and the prototype property of a function? What is the relationship between the two?**
