@@ -21,9 +21,9 @@ To run ESLint, run `npx eslint solutions.js`
       ```
 
 2. Use the pseudo-classical object creation pattern to create a `SavingsAccount` constructor. `SavingsAccount` instances should be initialized with a `name` and a  `balance` of `0`. They should also have three methods:
-  * `showBalance`, which returns the current balance of the account converted to a string with a currency symbol.
-  * `depositFunds` which takes a number parameter, adds it to the current balance, and then returns `$<<number>> deposited`. If `depositFunds` is called with an argument that is _not_ a positive number, it should return `"Please include a deposit amount that is greater than 0"`.
-  * `withdrawFunds`, which takes a number argument, subtracts it from the current balance, and returns $`<<number>> withdrawn`. If `withdrawFunds` is called with number that is _greater_ than the current balance, it should return `"Insufficient Funds"`.
+    * `showBalance`, which returns the current balance of the account converted to a string with a currency symbol.
+    * `depositFunds` which takes a number parameter, adds it to the current balance, and then returns `$<<number>> deposited`. If `depositFunds` is called with an argument that is _not_ a positive number, it should return `"Please include a deposit amount that is greater than 0"`.
+    * `withdrawFunds`, which takes a number argument, subtracts it from the current balance, and returns $`<<number>> withdrawn`. If `withdrawFunds` is called with number that is _greater_ than the current balance, it should return `"Insufficient Funds"`.
 
       ```javascript
       const myAccount = new SavingsAccount('Reuben');
@@ -39,9 +39,9 @@ To run ESLint, run `npx eslint solutions.js`
       myAccount.balance; // "$25"
       ```
 3. Use the pseudo-classical object creation pattern to create a `Phone` constructor. `Phone` instances should be initialized with a `phoneNumber`. `Phone` objects should also have a `contacts` property, initialized with a value of an empty array. `Phone`s should have the following methods available to them:
-  * `addContact`, which takes a `contact` object as a parameter and adds this object to the `contacts` property. The `contact` objects should consist of two properties, a `name` and a `phoneNumber`. `addContact` should return `<<contact name>> added.` However, if `addContact` is called with a `contact` that does not have a `name` or `phoneNumber` property, the method should simply return `Invalid`. Additionally, all phone numbers **must be ten digits**. Calling `addContact` with a `phoneNumber` that is not a ten digit string should return `Invalid`. 
-  * `removeContact`, which takes a string (`name`) as a parameter and removes the object with the matching `name` from the `contacts` array. If `removeContact` is called with a `name` that is not in `contacts`, the method should return `"Contact not found"`. Otherwise, it should return `<<contact name>> removed.` 
-  * `call`, which takes a string argument which could represent a `name` OR a `phoneNumber`. If the `name` or `phoneNumber` is found in contacts, it should return, `"Calling <<contact name>>..."`. If it is not found it should return, `"Calling <<phone number>>"`if the parameter passed is a 10 digit string. Otherwise, it should return, `"Invalid"`
+    * `addContact`, which takes a `contact` object as a parameter and adds this object to the `contacts` property. The `contact` objects should consist of two properties, a `name` and a `phoneNumber`. `addContact` should return `<<contact name>> added.` However, if `addContact` is called with a `contact` that does not have a `name` or `phoneNumber` property, the method should simply return `Invalid`. Additionally, all phone numbers **must be ten digits**. Calling `addContact` with a `phoneNumber` that is not a ten digit string should return `Invalid`. 
+    * `removeContact`, which takes a string (`name`) as a parameter and removes the object with the matching `name` from the `contacts` array. If `removeContact` is called with a `name` that is not in `contacts`, the method should return `"Contact not found"`. Otherwise, it should return `<<contact name>> removed.` 
+    * `call`, which takes a string argument which could represent a `name` OR a `phoneNumber`. If the `name` or `phoneNumber` is found in contacts, it should return, `"Calling <<contact name>>..."`. If it is not found it should return, `"Calling <<phone number>>"`if the parameter passed is a 10 digit string. Otherwise, it should return, `"Invalid"`
 
       ```javascript
       const myPhone = new Phone('3448731233');
@@ -77,4 +77,5 @@ To run ESLint, run `npx eslint solutions.js`
       ```
 
 5. Implement the following object relationship map using ES6 classes. You can make your methods return whatever you want as long as they belong to the correct classes.
+
   ![Professionals Map](./diagram2.png)
