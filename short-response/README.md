@@ -8,37 +8,39 @@ Answer each of the questions below clearly and concisely. Include code snippets 
 
 
 **2. What will the following code produce? Why?** 
-      ```javascript
-      let a = 10;
-      let b = 10;
-      let c = {
-        a: -10,
-        b: -10,
-      };
 
-      function add() {
-        return this.a + b;
-      }
+        ```javascript
+        let a = 10;
+        let b = 10;
+        let c = {
+          a: -10,
+          b: -10,
+        };
 
-      c.add = add;
+        function add() {
+          return this.a + b;
+        }
 
-      console.log(add());
-      console.log(c.add());
-      ```
+        c.add = add;
+
+        console.log(add());
+        console.log(c.add());
+        ```
 
 **3. What is a closure? How does it allow us to create private data?**
 
 **4. What will the following code log to the console? Why?**
-      ```javascript
-      function createGreeting(greeting){
-        return function(name){
-          return `${greeting}, ${name}!`
-        }
-      }
 
-      console.log( createGreeting("Hello") )
-      console.log( createGreeting("Buona sera")("Reuben") )
-      ```
+        ```javascript
+        function createGreeting(greeting){
+          return function(name){
+            return `${greeting}, ${name}!`
+          }
+        }
+
+        console.log( createGreeting("Hello") )
+        console.log( createGreeting("Buona sera")("Reuben") )
+        ```
 
 **5. What is encapsulation? How do constructors and prototypes in JavaScript help us write encapsulated programs?**
 
