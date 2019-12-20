@@ -45,9 +45,7 @@ Closure is embedded functions where the inner function has access to the enclose
   console.log( createGreeting("Hello") )
   console.log( createGreeting("Buona sera")("Reuben") )
   ```
-  Answer: The following code log anonymous function with the parameter name and `Buona sera, Reuben!`. On line 45 
-  
-
+  Answer: The following code log anonymous function with the parameter name and `Buona sera, Reuben!`. On line 45 because we only passed in one 
 
 **5. What is encapsulation? How do constructors and prototypes in JavaScript help us write encapsulated programs?**
 Encapsulation is separation of interface from implementation. Constructors and prototypes in JavaScript help us write encapsulated programs because we can  create our constructors for user's to use and just pass down the methods or such things we want our instances to inherit. Instead of always restating these methods we want other objects to use we can let them inherit it so it is still able to use it.
